@@ -1,0 +1,24 @@
+Copyright 2026 Christian Prior-Mamulyan
+
+This work is licensed under the Creative Commons Attribution 4.0 International
+License (CC BY 4.0). A copy of the licence is in LICENSE, and the full text is
+at https://creativecommons.org/licenses/by/4.0/
+
+WHY THIS FILE EXISTS
+
+CC BY 4.0 is the one licence that requires attribution in order to function:
+anyone who shares or adapts this work must credit the creator. But unlike the
+Apache 2.0 text, the Creative Commons legal code contains no slot for a
+copyright notice — it never names the licensor. So a repository carrying only
+LICENSE states the terms of attribution while identifying no one to attribute
+to, which leaves a reuser unable to comply even if they want to.
+
+This file supplies the missing half.
+
+HOW TO ATTRIBUTE
+
+    Christian Prior-Mamulyan, CC BY 4.0
+    https://github.com/cprima-forge
+
+Retain this notice in copies and substantial portions of the work. Indicate if
+you changed anything.

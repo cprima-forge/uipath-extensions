@@ -1,0 +1,3 @@
+[submodule "docs/rfc-gist"]
+	path = docs/rfc-gist
+	url = https://gist.github.com/cprima/10c7bbc65dd578940c7654d13d083d9e.git

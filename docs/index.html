@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UiPath Extensions — cprima-forge</title>
+  <meta name="description" content="Community-built extensions and utilities for the UiPath Python SDK by cprima-forge." />
+
+  <style>
+    /* Solarized Light base */
+    :root{
+      --base3:#fdf6e3;   /* background */
+      --base2:#eee8d5;   /* panels */
+      --base1:#93a1a1;   /* subtle text */
+      --base0:#839496;   /* secondary text */
+      --base00:#657b83;  /* body text */
+      --base01:#586e75;  /* headings */
+      --brand:#cb4b16;   /* Solarized Orange */
+      --link:#268bd2;    /* Solarized Blue */
+      --link-visited:#6c71c4; /* Violet */
+    }
+
+    html,body{margin:0;padding:0;background:var(--base3);color:var(--base00);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,
+      "Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";line-height:1.6}
+    .topbar{background:var(--brand);color:#fff;padding:.75rem 1rem;position:sticky;top:0;z-index:10}
+    .topbar .brand{font-weight:700;letter-spacing:.2px}
+    .wrap{max-width:960px;margin:1.25rem auto;padding:0 1rem}
+    h1,h2,h3{color:var(--base01);margin-top:1.2em}
+    a{color:var(--link);text-decoration:none}
+    a:visited{color:var(--link-visited)}
+    a:hover{text-decoration:underline}
+    .panel{background:var(--base2);border-radius:8px;padding:1rem}
+    code,kbd,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+    pre{background:#f8f1dc;border:1px solid #eadfca;border-radius:6px;padding:.75rem;overflow:auto}
+    .muted{color:var(--base1)}
+    footer{margin:3rem 0 2rem;color:var(--base1);font-size:.95rem}
+    #rfc-container{margin-top:2rem}
+    #rfc-container h1:first-child{display:none;} /* hide RFC title duplication */
+  </style>
+</head>
+<body>
+
+  <!-- Brand Element #1: Solarized Orange top bar -->
+  <div class="topbar">
+    <span class="brand">cprima-forge</span>
+    <span class="muted"> · UiPath Extensions</span>
+  </div>
+
+  <main class="wrap">
+    <h1>UiPath Extensions</h1>
+    <p class="muted">Community-built extensions and utilities for the UiPath® Python SDK. Independent project, not affiliated with UiPath.</p>
+
+    <section class="panel">
+      <h2>Status</h2>
+      <p>Initial repository setup. Source code and docs will be added in upcoming commits.</p>
+      <ul>
+        <li>Repo: <a href="https://github.com/cprima-forge/uipath-extensions">cprima-forge/uipath-extensions</a></li>
+        <li>Planned PyPI name: <code>cprima-forge-uipath-extensions</code></li>
+        <li>Planned import: <code>cpmf.uipath_ext</code></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Embedded RFC (live from Gist)</h2>
+      <p class="muted">
+        Rendered directly from the original Gist:  
+        <a href="https://gist.github.com/cprima/10c7bbc65dd578940c7654d13d083d9e">cprima/10c7bbc6…</a>
+      </p>
+      <div id="rfc-container" class="panel">Loading RFC from Gist…</div>
+    </section>
+
+    <section>
+      <h2>Planned Scope</h2>
+      <ul>
+        <li>Helpers for Orchestrator, Data Service, Queues</li>
+        <li>Integration patterns with agent frameworks</li>
+        <li>Observability &amp; developer experience utilities</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Get Involved</h2>
+      <p>Issues and suggestions are welcome in the GitHub repository.</p>
+    </section>
+
+    <footer>
+      <p>Docs licensed under <strong>CC-BY 4.0</strong>. UiPath® is a registered trademark of UiPath, Inc.  
+      This is an independent community project.</p>
+    </footer>
+  </main>
+
+  <!-- marked.js renderer -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', async () => {
+    const target = document.getElementById('rfc-container');
+    const gistRawUrl = 'https://gist.githubusercontent.com/cprima/10c7bbc65dd578940c7654d13d083d9e/raw/!RfC.md';
+    try {
+      const response = await fetch(gistRawUrl, {headers: {'Accept': 'text/plain'}});
+      if (!response.ok) throw new Error(`Failed to load RFC (${response.status})`);
+      const markdown = await response.text();
+      target.innerHTML = marked.parse(markdown);
+    } catch (err) {
+      console.error(err);
+      target.innerHTML = `<p style="color:var(--brand)">⚠️ Unable to load RFC from Gist. 
+        You can view it directly on <a href="https://gist.github.com/cprima/10c7bbc65dd578940c7654d13d083d9e">GitHub Gist</a>.</p>`;
+    }
+  });
+  </script>
+</body>
+</html>

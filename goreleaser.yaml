@@ -1,0 +1,51 @@
+# .goreleaser.yaml
+# GoReleaser configuration for cprima-forge/uipath-extensions
+#
+# Version is derived from git tags (standard GoReleaser behavior).
+# To create a release: git tag v0.1.0 && git push origin v0.1.0
+#
+# This config creates GitHub releases but does NOT publish to PyPI/MyGet.
+# Use separate publish workflow after release is created.
+
+project_name: uipath-extensions
+dist: dist
+
+before:
+  hooks:
+    - echo "Preparing release for cprima-forge/uipath-extensions"
+    - uv build
+
+builds: []
+
+archives:
+  - id: source
+    format: tar.gz
+    name_template: "{{ .ProjectName }}-{{ .Version }}"
+    files:
+      - README.md
+      - pyproject.toml
+      - LICENSE*
+      - src/**/*
+      - tests/**/*
+      - docs/**/*
+      - tools/**/*
+      - Makefile
+      - .editorconfig
+
+# Include Python wheel and sdist in release
+extra_files:
+  - glob: ./dist/*.whl
+  - glob: ./dist/*.tar.gz
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - '^docs:'
+      - '^test:'
+
+release:
+  github:
+    owner: cprima-forge
+    name: uipath-extensions
+  draft: true
