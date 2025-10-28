@@ -33,11 +33,8 @@ archives:
       - tools/**/*
       - Makefile
       - .editorconfig
-
-# Include Python wheel and sdist in release
-extra_files:
-  - glob: ./dist/*.whl
-  - glob: ./dist/*.tar.gz
+      - dist/*.whl
+      - dist/*.tar.gz
 
 changelog:
   sort: asc
