@@ -1,6 +1,6 @@
 # UiPath SDK Extensions - Development Roadmap
 
-**Current Version:** 0.0.2
+**Current Version:** 0.0.5
 **Last Updated:** 2025-10-26
 **API Analysis:** Orchestrator v20.0 (339 endpoints)
 
@@ -11,7 +11,7 @@ The UiPath Python SDK covers approximately 15% of the Orchestrator API surface. 
 **Current Coverage:** ~25% (85+ operations across 11 extension classes)
 **Remaining Gap:** ~75% (254+ endpoints across 90+ API families)
 
-## What's Implemented (v0.0.2)
+## What's Implemented (v0.0.5)
 
 ### Storage & Context Operations
 - **ContextGroundingExt** - Storage bucket inspection, file listing, ingestion verification
@@ -155,22 +155,22 @@ The UiPath Python SDK covers approximately 15% of the Orchestrator API surface. 
 
 ### Completed Areas (Potential Enhancements)
 
-**Assets (✅ v0.0.2)** - Consider adding:
+**Assets (✅ v0.0.5)** - Consider adding:
 - Bulk asset operations
 - Asset templates
 - Asset validation rules
 
-**Jobs (✅ v0.0.2)** - Consider adding:
+**Jobs (✅ v0.0.5)** - Consider adding:
 - Job priority management
 - Job chaining/dependencies
 - Advanced filtering by execution time
 
-**Queues (✅ v0.0.2)** - Consider adding:
+**Queues (✅ v0.0.5)** - Consider adding:
 - Queue item bulk operations
 - Queue SLA monitoring
 - Queue performance metrics
 
-**Processes (✅ v0.0.2)** - Consider adding:
+**Processes (✅ v0.0.5)** - Consider adding:
 - Release deployment automation
 - A/B testing support
 - Release approval workflows
@@ -228,17 +228,17 @@ The UiPath Python SDK covers approximately 15% of the Orchestrator API surface. 
 - ❌ Robots (21 endpoints)
 
 **TIER 2 - Partial Coverage, Core Operations:**
-- ✅ Assets (9 endpoints) - **COMPLETE v0.0.2**
-- ✅ Jobs (10 endpoints) - **COMPLETE v0.0.2**
-- ✅ Queues (16 endpoints) - **COMPLETE v0.0.2**
-- ✅ Processes/Releases (18 endpoints) - **COMPLETE v0.0.2**
+- ✅ Assets (9 endpoints) - **COMPLETE v0.0.5**
+- ✅ Jobs (10 endpoints) - **COMPLETE v0.0.5**
+- ✅ Queues (16 endpoints) - **COMPLETE v0.0.5**
+- ✅ Processes/Releases (18 endpoints) - **COMPLETE v0.0.5**
 - ✅ Buckets (12 endpoints) - **COMPLETE v0.0.1**
-- ✅ Folders (24 endpoints) - **COMPLETE v0.0.2**
+- ✅ Folders (24 endpoints) - **COMPLETE v0.0.5**
 
 **TIER 3 - Zero Coverage, Specialized:**
-- ❌ Schedules (6 endpoints) - **COMPLETE v0.0.2** ✅
-- ❌ Libraries (5 endpoints) - **COMPLETE v0.0.2** ✅
-- ❌ Tasks/Forms (38 endpoints) - **COMPLETE v0.0.2** ✅
+- ❌ Schedules (6 endpoints) - **COMPLETE v0.0.5** ✅
+- ❌ Libraries (5 endpoints) - **COMPLETE v0.0.5** ✅
+- ❌ Tasks/Forms (38 endpoints) - **COMPLETE v0.0.5** ✅
 - ❌ Webhooks (5 endpoints)
 - ❌ CredentialStores (7 endpoints)
 - ❌ Users (10 endpoints)
@@ -441,7 +441,7 @@ uipath-tasks-ext            # Forms and tasks
    - MonitoringExt (dashboards, analytics)
    - RobotsExt (fleet management)
 
-2. **Phase 2 Feedback** - Which v0.0.2 extensions are most valuable?
+2. **Phase 2 Feedback** - Which v0.0.5 extensions are most valuable?
    - AssetsExt, JobsExt, QueuesExt, ProcessesExt
    - SchedulesExt, LibrariesExt, TasksExt, FolderManagementExt
 
