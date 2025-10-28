@@ -8,7 +8,7 @@ Version: **0.0.5** (Alpha) | **[Open a PR](https://github.com/cprima-forge/uipat
 
 Community-built extensions that fill ~85% of the API gaps in the official UiPath Python SDK. Provides 11 extension classes covering assets, jobs, queues, processes, schedules, libraries, tasks, folders, and storage operations.
 
-**This is fast-moving code in active development.** We welcome contributions, bug reports, and feature requests!
+**This is fast-moving code in active development.** Contributions, bug reports, and feature requests are welcome.
 
 - **Package:** `cprima-forge-uipath-extensions`
 - **Import:** `from cpmf.uipath_ext import <ClassName>`
@@ -33,14 +33,14 @@ uv pip install cprima-forge-uipath-extensions \
 
 ### Option 2: Fork and Use as Submodule (Recommended for Development)
 
-Perfect for contributing or staying on the cutting edge:
+Recommended approach for contributing or staying on the cutting edge:
 
 ```bash
 # 1. Fork this repository on GitHub
 #    Go to: https://github.com/cprima-forge/uipath-extensions
 #    Click "Fork"
 
-# 2. Add your fork as a submodule in your project
+# 2. Add the fork as a submodule in a project
 git submodule add -b alpha/initial-migration \
   https://github.com/YOUR_USERNAME/uipath-extensions \
   libs/uipath-extensions
@@ -49,7 +49,7 @@ git submodule add -b alpha/initial-migration \
 cd libs/uipath-extensions
 uv pip install -e .
 
-# 4. When you make improvements, open a PR!
+# 4. After making improvements, open a PR
 git checkout -b feature/my-improvement
 # ... make changes ...
 git commit -am "feat: add awesome feature"
@@ -111,7 +111,7 @@ folder_id = utils.get_folder_id_from_key("5ebb73c3-...")
 
 ## Contributing
 
-**We need your help!** This library is community-driven and benefits from real-world usage feedback.
+This library is community-driven and benefits from real-world usage feedback.
 
 ### Ways to Contribute
 
