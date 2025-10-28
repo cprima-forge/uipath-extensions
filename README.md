@@ -2,11 +2,13 @@
 
 **Production-ready extensions for the UiPath Python SDK**
 
-Version: **0.0.5** (Alpha)
+Version: **0.0.5** (Alpha) | **[Open a PR](https://github.com/cprima-forge/uipath-extensions/pulls)** | **[Submit Ideas](https://github.com/cprima-forge/uipath-extensions/issues/new)**
 
 ## Overview
 
 Community-built extensions that fill ~85% of the API gaps in the official UiPath Python SDK. Provides 11 extension classes covering assets, jobs, queues, processes, schedules, libraries, tasks, folders, and storage operations.
+
+**This is fast-moving code in active development.** We welcome contributions, bug reports, and feature requests!
 
 - **Package:** `cprima-forge-uipath-extensions`
 - **Import:** `from cpmf.uipath_ext import <ClassName>`
@@ -16,8 +18,10 @@ Community-built extensions that fill ~85% of the API gaps in the official UiPath
 
 ## Installation
 
+### Option 1: Install from MyGet (Alpha Releases)
+
 ```bash
-# Install from MyGet feed (alpha releases)
+# With pip:
 pip install cprima-forge-uipath-extensions \
   --extra-index-url https://www.myget.org/F/cprima-forge/python/
 
@@ -25,6 +29,32 @@ pip install cprima-forge-uipath-extensions \
 uv pip install cprima-forge-uipath-extensions \
   --extra-index-url https://www.myget.org/F/cprima-forge/python/ \
   --index-strategy unsafe-best-match
+```
+
+### Option 2: Fork and Use as Submodule (Recommended for Development)
+
+Perfect for contributing or staying on the cutting edge:
+
+```bash
+# 1. Fork this repository on GitHub
+#    Go to: https://github.com/cprima-forge/uipath-extensions
+#    Click "Fork"
+
+# 2. Add your fork as a submodule in your project
+git submodule add -b alpha/initial-migration \
+  https://github.com/YOUR_USERNAME/uipath-extensions \
+  libs/uipath-extensions
+
+# 3. Install in editable mode
+cd libs/uipath-extensions
+uv pip install -e .
+
+# 4. When you make improvements, open a PR!
+git checkout -b feature/my-improvement
+# ... make changes ...
+git commit -am "feat: add awesome feature"
+git push origin feature/my-improvement
+# Open PR at: https://github.com/cprima-forge/uipath-extensions/compare
 ```
 
 ## Quick Start
@@ -79,10 +109,29 @@ folder_id = utils.get_folder_id_from_key("5ebb73c3-...")
 - **Return Raw Data** - Methods return dictionaries/lists
 - **Clear Naming** - Method prefixes indicate operation (`list_*`, `get_*`, `create_*`, `delete_*`)
 
+## Contributing
+
+**We need your help!** This library is community-driven and benefits from real-world usage feedback.
+
+### Ways to Contribute
+
+1. **Open a Pull Request** - Add methods, fix bugs, improve docs
+   - [View open PRs](https://github.com/cprima-forge/uipath-extensions/pulls)
+   - [Create new PR](https://github.com/cprima-forge/uipath-extensions/compare)
+
+2. **Submit Issues** - Report bugs, request features, share ideas
+   - [View open issues](https://github.com/cprima-forge/uipath-extensions/issues)
+   - [Create new issue](https://github.com/cprima-forge/uipath-extensions/issues/new)
+
+3. **Test and Provide Feedback** - Use the library, report what works (or doesn't)
+
+4. **Improve Documentation** - Examples, guides, API clarifications
+
+See [docs/contributors/AGENTS.md](docs/contributors/AGENTS.md) for development setup and contribution guidelines.
+
 ## Links
 
 - **GitHub:** https://github.com/cprima-forge/uipath-extensions
-- **Issues:** https://github.com/cprima-forge/uipath-extensions/issues
 - **Official UiPath SDK:** https://github.com/UiPath/uipath-python
 - **Orchestrator API:** https://docs.uipath.com/orchestrator/reference
 
