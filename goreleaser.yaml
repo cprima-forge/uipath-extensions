@@ -7,6 +7,8 @@
 # This config creates GitHub releases but does NOT publish to PyPI/MyGet.
 # Use separate publish workflow after release is created.
 
+version: 2
+
 project_name: uipath-extensions
 dist: dist
 
