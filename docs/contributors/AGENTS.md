@@ -173,7 +173,7 @@ and error cases. Don't hit live APIs."
 ```
 
 ### Version Management
-- **Current:** 0.0.5 (alpha/initial-migration branch)
+- **Current:** 0.0.5 (develop branch)
 - **Breaking changes:** Permitted in 0.0.x versions
 - **Semver:** Will follow once reaching 1.0.0
 

@@ -41,7 +41,7 @@ Recommended approach for contributing or staying on the cutting edge:
 #    Click "Fork"
 
 # 2. Add the fork as a submodule in a project
-git submodule add -b alpha/initial-migration \
+git submodule add -b develop \
   https://github.com/YOUR_USERNAME/uipath-extensions \
   libs/uipath-extensions
 
