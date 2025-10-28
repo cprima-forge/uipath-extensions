@@ -48,12 +48,12 @@ bucket_response = sdk.api_client.request(
 
 ## Solution
 
-**cprima-forge-uipath-extensions** provides clean, tested, documented wrappers around missing SDK functionality.
+**uipath-sdk-extensions** provides clean, tested, documented wrappers around missing SDK functionality.
 
 ### Installation
 
 ```bash
-pip install cprima-forge-uipath-extensions
+pip install uipath-sdk-extensions
 ```
 
 **Privacy Note:** This library wraps the official UiPath Python SDK, which collects basic usage telemetry by default. To disable telemetry, set the environment variable before using the SDK:
@@ -63,7 +63,7 @@ import os
 os.environ["UIPATH_TELEMETRY_ENABLED"] = "false"
 
 # Or use the helper function
-from cpmf.uipath_ext import disable_telemetry
+from uipath_sdk_extensions import disable_telemetry
 disable_telemetry()
 
 from uipath import UiPath
@@ -86,7 +86,7 @@ set UIPATH_TELEMETRY_ENABLED=false
 
 ```python
 from uipath import UiPath
-from cpmf.uipath_ext import ContextGroundingExt, FolderUtils
+from uipath_sdk_extensions import ContextGroundingExt, FolderUtils
 
 sdk = UiPath()
 
@@ -204,7 +204,7 @@ folder_key = utils.get_folder_key_from_id(5083200)
 ### Asset Management
 ```python
 from uipath import UiPath
-from cpmf.uipath_ext import AssetsExt
+from uipath_sdk_extensions import AssetsExt
 
 sdk = UiPath()
 assets = AssetsExt(sdk)
@@ -227,7 +227,7 @@ creds = assets.list_assets(
 
 ### Job Operations
 ```python
-from cpmf.uipath_ext import JobsExt
+from uipath_sdk_extensions import JobsExt
 
 jobs = JobsExt(sdk)
 
@@ -257,7 +257,7 @@ print(f"Success rate: {stats['successful']}/{stats['total']}")
 
 ### Queue Management
 ```python
-from cpmf.uipath_ext import QueuesExt
+from uipath_sdk_extensions import QueuesExt
 
 queues = QueuesExt(sdk)
 
@@ -288,7 +288,7 @@ print(f"Pending: {stats['new']}, Failed: {stats['failed']}")
 
 ### Task Workflows (Human-in-the-Loop)
 ```python
-from cpmf.uipath_ext import TasksExt
+from uipath_sdk_extensions import TasksExt
 
 tasks = TasksExt(sdk)
 
@@ -315,7 +315,7 @@ tasks.complete_task(
 
 ### Schedule Management
 ```python
-from cpmf.uipath_ext import SchedulesExt
+from uipath_sdk_extensions import SchedulesExt
 
 schedules = SchedulesExt(sdk)
 

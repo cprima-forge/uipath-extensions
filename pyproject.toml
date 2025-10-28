@@ -1,12 +1,12 @@
 [project]
 name = "cprima-forge-uipath-extensions"
-version = "0.0.1"
-description = "Community-built extensions and utilities for the UiPath Python SDK."
+version = "0.0.5"
+description = "Production-ready extensions for the UiPath Python SDK - bridges critical API gaps for assets, jobs, queues, processes, schedules, libraries, tasks, folders, and storage"
 readme = "README.md"
 license = "CC-BY-4.0"
 authors = [{ name = "Christian Prior-Mamulyan" }]
 requires-python = ">=3.11"
-dependencies = []
+dependencies = ["uipath>=2.1.111"]
 
 [project.urls]
 Homepage = "https://github.com/cprima-forge/uipath-extensions"
