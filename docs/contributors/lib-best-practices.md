@@ -181,7 +181,7 @@ from .assets import AssetsExt
 from .jobs import JobsExt
 # ... all exports
 
-__version__ = "0.0.2"
+__version__ = "0.0.5"
 
 __all__ = [
     "AssetsExt",
@@ -399,7 +399,7 @@ def list_assets(self, folder_key: str) -> List[Dict[str, Any]]:
 - `0.x.0` - Beta, API stabilizing
 - `1.0.0` - Stable, backwards compatibility guaranteed
 
-**Current State (v0.0.2):**
+**Current State (v0.0.5):**
 - All is in flux
 - Breaking changes permitted
 - Focus on maturing the API surface
@@ -421,4 +421,4 @@ def list_assets(self, folder_key: str) -> List[Dict[str, Any]]:
 ---
 
 **Last Updated:** 2025-10-27
-**Version:** 0.0.2 (Alpha)
+**Version:** 0.0.5 (Alpha)

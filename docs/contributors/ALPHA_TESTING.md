@@ -1,6 +1,6 @@
 # Alpha Testing Guide - uipath-sdk-extensions
 
-**Current Version:** 0.0.2
+**Current Version:** 0.0.5
 
 ## Installation
 
@@ -42,7 +42,7 @@ for file in files:
     print(f"  - {file['FullPath']}: {file['Size']/1024:.1f} KB")
 ```
 
-### Phase 2 Features (v0.0.2) - NEW
+### Phase 2 Features (v0.0.5) - NEW
 
 ```python
 from uipath_sdk_extensions import AssetsExt, JobsExt, QueuesExt, TasksExt
@@ -150,7 +150,7 @@ print(f"Directory: {config['directoryPath']}")
 print(f"Pattern: {config['fileNameGlob']}")
 ```
 
-## Phase 2 Testing (v0.0.2)
+## Phase 2 Testing (v0.0.5)
 
 ### 6. Asset Management
 ```python
@@ -386,4 +386,4 @@ Include:
 
 ## Version
 
-Current version: **0.0.2** (Phase 2 - Major expansion)
+Current version: **0.0.5** (Phase 2 - Major expansion)
