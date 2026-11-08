@@ -1,1 +1,1 @@
-"""Tests for cprima-forge-uipath-extensions"""
+"""Tests for cpmf-uipath-extensions"""

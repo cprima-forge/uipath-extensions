@@ -10,8 +10,8 @@ Community-built extensions and utilities for the UiPath Python SDK. This is an i
 - Python 3.11+ required
 - PowerShell Core 7+ required (Windows cross-platform)
 - License: CC-BY 4.0 (documentation and materials)
-- Planned PyPI package: `cprima-forge-uipath-extensions`
-- Planned import namespace: `cpmf.uipath_ext`
+- PyPI package: `cpmf-uipath-extensions`
+- Import namespace: `cpmf.uipath_ext`
 - Independent project, not affiliated with or endorsed by UiPath
 
 ## Repository Structure
@@ -20,7 +20,7 @@ This is a **hybrid documentation/code repository**:
 
 1. **Documentation Site**: `docs/` contains a static HTML site hosted on GitHub Pages
 2. **RFC Submodule**: `docs/rfc-gist/` is a Git submodule linking to a Gist containing the RFC
-3. **Python Package**: Source code will be added in upcoming commits (currently in initial setup phase)
+3. **Python Package**: `src/cpmf/uipath_ext/` contains 11 extension classes for UiPath SDK
 4. **Release Artifacts**: Uses GoReleaser for creating release archives (primarily for documentation distribution)
 
 ## Common Commands
